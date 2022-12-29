@@ -69,6 +69,7 @@ void view_bank_accounts(void)
 			PCurrentClient = PCurrentClient->PNextClient;
 		}
 	}
+	return;
 }
 void create_account(void)
 {
@@ -102,6 +103,7 @@ void create_account(void)
 	while ((getchar()) != '\n');
 	printf("Enter Your Full Name(at least 4 names): ");
 	fgets(Name,100,stdin);
+	/*Check the has 3 spaces which means that he enter four names*/
 	if(check_spaces(Name)>=3)
 	{
 		strcpy(PNewClient->client.Full_Name,Name);
@@ -109,6 +111,7 @@ void create_account(void)
 		fgets(PNewClient->client.Address,100,stdin);
 		printf("Enter Your National ID: ");
 		fgets(PNewClient->client.National_ID,15,stdin);
+		/*check if the owner enter 14 digit of client's national id*/
 		while(No_digits(PNewClient->client.National_ID)!=14)
 		{
 			printf("you write a wrong National ID(National ID must contains 14 digits)\n");
@@ -117,11 +120,13 @@ void create_account(void)
 		}
 		printf("Enter Your Age: ");
 		scanf("%d",&PNewClient->client.Age);
+		/*check if the age of the client is less than 21 so it need a guardian*/
 		if(PNewClient->client.Age <21)
 		{
 			while ((getchar()) != '\n');
 			printf("Enter Your Guardian ID: ");
 			fgets(PNewClient->client.Guardian_ID,15,stdin);
+			/*check if the owner enter 14 digit of guardian's national id*/
 			while(No_digits(PNewClient->client.Guardian_ID)!=14)
 			{
 				printf("you write a wrong Guardian ID(Guardian ID must contains 14 digits)\n");
@@ -132,7 +137,7 @@ void create_account(void)
 			printf("Enter Your Guardian Name: ");
 			fgets(PNewClient->client.Guardian,100,stdin);
 		}
-		else
+		else/*the client's age is bigger than 21*/
 		{
 			PNewClient->client.Guardian[0]= '\0';
 			PNewClient->client.Guardian_ID[0]='\0';
@@ -141,6 +146,7 @@ void create_account(void)
 		scanf("%d",&PNewClient->client.Balance);
 		PNewClient->client.password = random_numbers(1000,9999);
 		PNewClient->client.Status = Active;
+		printf("The account has been created successfully\n");
 		PNewClient->PNextClient = NULL;
 	}
 	else
@@ -148,18 +154,21 @@ void create_account(void)
 		PFirstClient = NULL;
 		printf("You enter a wrong name\n");
 	}
+	return;
 }
 void make_transaction(uint32 ID)
 {
 	uint32 transactionID,money;
 	struct bankAccount *PCurrentClient=PFirstClient;
 	struct bankAccount *PtransactionClient=PFirstClient;
+	/*check the list is not empty*/
 	if(PFirstClient)
 	{
 		while(PCurrentClient)
 		{
 			if(PCurrentClient->client.Bank_account_ID == ID)
 			{
+				/*check the client id is active or not*/
 				if(PCurrentClient->client.Status==Active)
 				{
 					printf("Enter the Bank Account ID you want to transfer money to: ");
@@ -168,14 +177,17 @@ void make_transaction(uint32 ID)
 					{
 						if(PtransactionClient->client.Bank_account_ID == transactionID)
 						{
+							/*check the transaction account id is active or not*/
 							if(PtransactionClient->client.Status==Active)
 							{
 								printf("Enter amount of money to transfer it to this account: ");
 								scanf("%d",&money);
+								/*check the client balance has the amount of money*/
 								if(PCurrentClient->client.Balance>=money)
 								{
 									PtransactionClient->client.Balance +=money;
 									PCurrentClient->client.Balance -=money;
+									printf("The transaction has been done successfully\n");
 								}
 								else
 								{
@@ -202,11 +214,13 @@ void make_transaction(uint32 ID)
 	{
 		printf("The list is empty\n");
 	}
+	return;
 }
 void change_account_status(uint32 ID)
 {
 	struct bankAccount *PCurrentClient=PFirstClient;
 	accountStatus_t state;
+	/*check the list is not empty*/
 	if(PFirstClient)
 	{
 		while(PCurrentClient)
@@ -240,27 +254,34 @@ void change_account_status(uint32 ID)
 	{
 		printf("The list is empty\n");
 	}
-
+	return;
 }
 void get_cash(uint32 ID)
 {
 	struct bankAccount *PCurrentClient=PFirstClient;
 	uint32 money;
+	/*check the list is not empty*/
 	if(PFirstClient)
 	{
 		while(PCurrentClient)
 		{
 			if(PCurrentClient->client.Bank_account_ID == ID)
 			{
-				printf("Enter amount of money you want from this account: ");
-				scanf("%d",&money);
-				if(PCurrentClient->client.Balance>=money)
+				/*check the client id is active or not*/
+				if(PCurrentClient->client.Status==Active)
 				{
-					PCurrentClient->client.Balance -=money;
-				}
-				else
-				{
-					printf("This amount is bigger than the account has\n");
+					printf("Enter amount of money you want from this account: ");
+					scanf("%d",&money);
+					/*check the client balance has the amount of money*/
+					if(PCurrentClient->client.Balance>=money)
+					{
+						PCurrentClient->client.Balance -=money;
+						printf("The operation has been done successfully\n");
+					}
+					else
+					{
+						printf("This amount is bigger than the account has\n");
+					}
 				}
 			}
 			PCurrentClient = PCurrentClient->PNextClient;
@@ -270,20 +291,27 @@ void get_cash(uint32 ID)
 	{
 		printf("The list is empty\n");
 	}
+	return;
 }
 void deposit_in_account(uint32 ID)
 {
 	struct bankAccount *PCurrentClient=PFirstClient;
 	uint32 money;
+	/*check the list is not empty*/
 	if(PFirstClient)
 	{
 		while(PCurrentClient)
 		{
 			if(PCurrentClient->client.Bank_account_ID == ID)
 			{
-				printf("Enter amount of money you want to add to this account: ");
-				scanf("%d",&money);
-				PCurrentClient->client.Balance +=money;
+				/*check the client id is active or not*/
+				if(PCurrentClient->client.Status==Active)
+				{
+					printf("Enter amount of money you want to add to this account: ");
+					scanf("%d",&money);
+					PCurrentClient->client.Balance +=money;
+					printf("The operation has been done successfully\n");
+				}
 			}
 			PCurrentClient = PCurrentClient->PNextClient;
 		}
@@ -292,28 +320,36 @@ void deposit_in_account(uint32 ID)
 	{
 		printf("The list is empty\n");
 	}
+	return;
 }
 void change_account_password(uint32 ID)
 {
 	struct bankAccount *PCurrentClient=PFirstClient;
 	uint32 old_password,new_password;
+	/*check the list is not empty*/
 	if(PFirstClient)
 	{
 		while(PCurrentClient)
 		{
 			if(PCurrentClient->client.Bank_account_ID == ID)
 			{
-				printf("Enter your old password: ");
-				scanf("%d",&old_password);
-				if(PCurrentClient->client.password == old_password)
+				/*check the client id is active or not*/
+				if(PCurrentClient->client.Status==Active)
 				{
-					printf("Enter your new password: ");
-					scanf("%d",&new_password);
-					PCurrentClient->client.password = new_password;
-				}
-				else
-				{
-					printf("You enter a wrong password\n");
+					printf("Enter your old password: ");
+					scanf("%d",&old_password);
+					/*check the client password is correct or not*/
+					if(PCurrentClient->client.password == old_password)
+					{
+						printf("Enter your new password: ");
+						scanf("%d",&new_password);
+						PCurrentClient->client.password = new_password;
+						printf("The password has been changed successfully\n");
+					}
+					else
+					{
+						printf("You enter a wrong password\n");
+					}
 				}
 			}
 			PCurrentClient = PCurrentClient->PNextClient;
@@ -323,13 +359,13 @@ void change_account_password(uint32 ID)
 	{
 		printf("The list is empty\n");
 	}
-
-
+	return;
 }
 errorStatus_t check_id(uint32 ID)
 {
 	struct bankAccount *PCurrentClient=PFirstClient;
 	errorStatus_t es=E_NOK;
+	/*check the list is not empty*/
 	if(PFirstClient)
 	{
 		while(PCurrentClient)
@@ -352,6 +388,7 @@ errorStatus_t check_password(uint32 ID)
 	struct bankAccount *PCurrentClient=PFirstClient;
 	uint32 password;
 	errorStatus_t es=E_NOK;
+	/*check the list is not empty*/
 	if(PFirstClient)
 	{
 		while(PCurrentClient)

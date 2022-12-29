@@ -43,6 +43,7 @@ int main()
 	uint8 choice[20],userName[20];
 	uint32 password,clientID;
 	uint8 exit2=0;
+	printf("----------Welcome to IMT Bank----------\n");
 	while(1)
 	{
 		printf("For Admin press 1\n");
@@ -137,6 +138,7 @@ int main()
 						view_bank_accounts();
 						break;
 					case 4:
+						printf("\n\n\n\n\n\n\n\n\n----------Bye Bye:)----------\n");
 						exit2=1;
 						break;
 					default:
@@ -189,6 +191,7 @@ int main()
 					system("cls");
 					break;
 				case 5:
+					printf("\n\n\n\n\n\n\n\n\n----------Bye Bye:)----------\n");
 					break;
 				default:
 					printf("You enter a wrong choice\n");
