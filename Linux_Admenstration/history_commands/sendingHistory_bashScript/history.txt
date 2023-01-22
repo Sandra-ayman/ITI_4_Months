@@ -1,0 +1,1000 @@
+  572  rostopic list
+  573  catkin_make
+  574  source devel/setup.sh
+  575  rostopic list
+  576  roscore
+  577  source devel/setup.sh
+  578  rosrun waypoint_updater waypoint_updater
+  579  rostopic list
+  580  rostopic list
+  581  roslaunch launch/waypoint_updater.launch
+  582  rosrun waypoint_updter.py
+  583  source devel/setup.bash
+  584  roslaunch launch/waypoint_updater.launch
+  585  source devel/setup.bash
+  586  rostopic list
+  587  rostopic info /final_waypoints
+  588  rosmsg info styx_msgs/Lane
+  589  catkin_make
+  590  source devel/setup.sh
+  591  roslaunch launch/styx.launch
+  592  catkin_make
+  593  source devel/setup.sh
+  594  roslaunch launch/styx.launch
+  595  catkin_make
+  596  source devel/setup.sh
+  597  roslaunch src/waypoint_updater/launch/waypoint_updater.launch
+  598  rosrun waypoint_updater waypoint_updater
+  599  source devel/setup.sh
+  600  roscore
+  601  rosbag play -l reference.bag
+  602  catkin_make
+  603  source devel/setup.sh
+  604  roslaunch launch/styx.launch
+  605  roslaunch launch/server.launch
+  606  roslaunch src/twist_controller/dbw_sim.launch
+  607  roslaunch src/twist_controller/launch/dbw_sim.launch
+  608  roslaunch src/twist_controller/launch/dbw.launch
+  609  roslaunch src/twist_controller/launch/dbw_test.launch
+  610  roslaunch src/twist_controller/launch/dbw.launch
+  611  source devel/setup.sh
+  612  roslaunch src/twist_controller/launch/dbw.launch
+  613  roslaunch src/twist_controller/launch/dbw_test.launch
+  614  roslaunch launch/site.launch
+  615  roslaunch src/twist_controller/launch/dbw.launch
+  616  roslaunch launch/dbw.launch
+  617  source devel/setup.sh
+  618  roslaunch launch/dbw.launch
+  619  catkin_make
+  620  rostopic list
+  621  roslaunch src/twist_controller/launch/dbw_test.launch
+  622  catkin_make
+  623  source devel/setup.sh
+  624  roslaunch src/twist_controller/launch/dbw_test.launch
+  625  source devel/setup.sh
+  626  roslaunch src/twist_controller/launch/dbw.launch
+  627  roslaunch src/twist_controller/launch/dbw_test.launch
+  628  roslaunch src/twist_controller/launch/dbw_sim.launch
+  629  roslaunch src/twist_controller/launch/dbw.launch
+  630  rostopic list
+  631  rosbag play -l reference.bag
+  632  catkin_make
+  633  source devel/setup.sh
+  634  roslaunch src/twist_controller/launch/dbw.launch
+  635  catkin_make
+  636  source devel/setup.sh
+  637  rostopic list
+  638  roslaunch src/waypoint_updater/launch/waypoint_updater.launch
+  639  rostopic list
+  640  pip install -r requirements.txt
+  641  catkin_make
+  642  cmake ..
+  643  make
+  644  catkin_make
+  645  source devel/setup.sh
+  646  roslaunch src/twist_controller/launch/dbw.launch
+  647  catkin_make
+  648  source devel/setup.sh
+  649  roslaunch src/waypoint_follower/launch/pure_pursuit.launch
+  650  rosbag play -l reference.bag
+  651  [A
+  652  rosbag play -l reference.bag
+  653  source devel/setup.sh
+  654  roslaunch src/twist_controller/launch/dbw.launch
+  655  source devel/setup.sh
+  656  roslaunch src/waypoint_updater/launch/waypoint_updater.launch
+  657  catkin_make
+  658  source devel/setup.sh
+  659  roslaunch launch/styx.launch
+  660  catkin_make
+  661  source devel/setup.sh
+  662  roscore
+  663  source devel/setup.sh
+  664  roslaunch src/twist_controller/launch/dbw_test.launch
+  665  roslaunch src/twist_controller/launch/dbw_sim.launch
+  666  roslaunch src/twist_controller/launch/dbw.launch
+  667  roslaunch src/twist_controller/launch/dbw_test.launch
+  668  rostopic list
+  669  pip install -r requirements.txt
+  670  cd ros
+  671  catkin_make
+  672  git clone https://github.com/darienmt/CarND-Capstone.git
+  673  pip install -r requirements.txt
+  674  catkin_make
+  675  source devel/setup.sh
+  676  roslaunch src/twist_controller/launch/dbw.launch
+  677  source devel/setup.sh
+  678  roslaunch src/twist_controller/launch/dbw_test.launch
+  679  rosbag play -l reference.bag
+  680  roslaunch src/twist_controller/launch/dbw_sim.launch
+  681  source devel/setup.sh
+  682  roslaunch src/twist_controller/launch/dbw_sim.launch
+  683  source devel/setup.sh
+  684  roslaunch launch/styx.launch
+  685  catkin_make
+  686  source devel/setup.sh
+  687  roslaunch src/twist_controller/launch/dbw.launch
+  688  source devel/setup.sh
+  689  roslaunch src/waypoint_updater/launch/waypoint_updater.launch
+  690  source devel/setup.sh
+  691  roslaunch src/twist_controller/launch/dbw.launch
+  692  source devel/setup.sh
+  693  roslaunch src/waypoint_follower/launch/pure_pursuit.launch
+  694  roslaunch launch/styx.launch
+  695  rosbag play -l reference.bag
+  696  catkin_make
+  697  source devel/setup.sh
+  698  roscore
+  699  source devel/setup.sh
+  700  rosbag play -l reference.bag
+  701  source devel/setup.sh
+  702  roslaunch src/twist_controller/launch/dbw_test.launch
+  703  source devel/setup.sh
+  704  roslaunch src/waypoint_updater/launch/waypoint_updater.launch
+  705  source devel/setup.sh
+  706  roslaunch src/twist_controller/launch/dbw.launch
+  707  source devel/setup.sh
+  708  roslaunch src/twist_controller/launch/dbw_sim.launch
+  709  source devel/setup.sh
+  710  roslaunch launch/styx.launch
+  711  git clone https://github.com/namoshri/RunCarla-Capstone.git
+  712  cd RunCarla-Capstone
+  713  pip install -r requirements.txt
+  714  cp 0001-update-ros.yml-for-camera-image-and-skip-downloading.patch darknet_ros/
+  715  cd darknet_ros
+  716  git apply --check  0001-update-ros.yml-for-camera-image-and-skip-downloading.patch && git am < 0001-update-ros.yml-for-camera-image-and-skip-downloading.patch
+  717  cd ros/src
+  718  git clone --recursive git@github.com:leggedrobotics/darknet_ros.git
+  719  cp 0001-update-ros.yml-for-camera-image-and-skip-downloading.patch darknet_ros/
+  720  cd darknet_ros
+  721  git apply --check  0001-update-ros.yml-for-camera-image-and-skip-downloading.patch && git am < 0001-update-ros.yml-for-camera-image-and-skip-downloading.patch
+  722  catkin_make
+  723  source devel/setup.sh
+  724  roslaunch launch/styx.launch
+  725  rosbag play -l reference.bag
+  726  catkin_make
+  727  source devel/setup.sh
+  728  roscore
+  729  source devel/setup.sh
+  730  roslaunch src/waypoint_updater/launch/waypoint_updater.launch
+  731  source devel/setup.sh
+  732  roslaunch src/twist_controller/launch/dbw.launch
+  733  python dbw_node.py
+  734  python twist_controller.py
+  735  catkin_make
+  736  source devel/setup.sh
+  737  roslaunch src/tl_detector/launch/tl_detector.launch
+  738  pyth tl_detector.py
+  739  python tl_detector.py
+  740  rosbag play -l traffic_light_bag_file/traffic_light_training.bag
+  741  roslaunch twist_controller/launch/dbw.launch
+  742  rosbag play -l loop_with_traffic_light.bag
+  743  roslaunch launch/site.launch
+  744  pip install -r requirements.txt
+  745  cd ros
+  746  catkin_make
+  747  source devel/setup.sh
+  748  roslaunch launch/styx.launch
+  749  roslaunch src/twist_controller/launch/dbw.launch
+  750  rosbag play -l reference.bag
+  751  catkin_make
+  752  source devel/setup.sh
+  753  roslaunch launch/styx.launch
+  754  source devel/setup.sh
+  755  roscore
+  756  cmake .. && make
+  757  ./pid
+  758  cmake .. && make
+  759  ./pid
+  760  cmake .. && make
+  761  ./pid
+  762  cmake .. && make
+  763  ./pid
+  764  cmake .. && make
+  765  ./pid
+  766  cmake .. && make
+  767  ./pid
+  768  cmake .. && make
+  769  ./pid
+  770  sudo get-apt update
+  771  sudo get update
+  772  sudo apt-get update
+  773  sudo snap install discord --classic
+  774  touch main.txt
+  775  touch mpc.txt
+  776  touch mpc_h.txt
+  777  cmake .. && make
+  778  ./mpc
+  779  cmake .. && make
+  780  ./pid
+  781  cmake .. && make
+  782  ./mpc
+  783  cmake .. && make
+  784  ./mpc
+  785  cmake .. && make
+  786  ./mpc
+  787  cmake .. && make
+  788  ./pid
+  789  cmake .. && make
+  790  ./pid
+  791  cmake .. && make
+  792  ./pid
+  793  cmake .. && make
+  794  ./pid
+  795  cmake .. && make
+  796  ./pid
+  797  cmake .. && make
+  798  ./pid
+  799  cmake .. && make
+  800  ./pid
+  801  cmake .. && make
+  802  ./pid
+  803  cmake .. && make
+  804  ./pid
+  805  cmake .. && make
+  806  ./pid
+  807  cmake .. && make
+  808  ./pid
+  809  cmake .. && make
+  810  ./pid
+  811  cmake .. && make
+  812  ./pid
+  813  cmake .. && make
+  814  ./pid
+  815  cmake .. && make
+  816  ./pid
+  817  cmake .. && make
+  818  ./pid
+  819  cmake .. && make
+  820  ./pid
+  821  cmake .. && make
+  822  ./mpc
+  823  make PythonAPI
+  824  git clone https://github.com/dotchen/carla.git
+  825  wget http://carla-assets-internal.s3.amazonaws.com/Releases/Linux/CARLA_0.9.6.tar.gz
+  826  mkdir carla_lbc
+  827  tar -xvzf CARLA_0.9.6.tar.gz -C carla_lbc
+  828  cd carla_lbc
+  829  git init
+  830  git remote add origin https://github.com/dianchen96/LearningByCheating.git
+  831  mv LICENSE CARLA_LICENSE 
+  832  git pull origin release-0.9.6
+  833  wget http://www.cs.utexas.edu/~dchen/lbc_release/navmesh/Town01.bin
+  834  wget http://www.cs.utexas.edu/~dchen/lbc_release/navmesh/Town02.bin
+  835  mv Town*.bin CarlaUE4/Content/Carla/Maps/Nav/
+  836  conda env create -f environment.yml
+  837  cd PythonAPI/carla/dist
+  838  rm carla-0.9.6-py3.5-linux-x86_64.egg
+  839  wget http://www.cs.utexas.edu/~dchen/lbc_release/egg/carla-0.9.6-py3.5-linux-x86_64.egg
+  840  easy_install carla-0.9.6-py3.5-linux-x86_64.egg
+  841  install carla-0.9.6-py3.5-linux-x86_64.egg
+  842  install--help
+  843  export PYTHONPATH=$PYTHONPATH:$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.6-py3.5-linux-x86_64.egg
+  844  cd ../../..
+  845  mkdir -p ckpts/image
+  846  cd ckpts/image
+  847  wget http://www.cs.utexas.edu/~dchen/lbc_release/ckpts/image/model-10.th
+  848  wget http://www.cs.utexas.edu/~dchen/lbc_release/ckpts/image/config.json
+  849  cd ../..
+  850  mkdir -p ckpts/priveleged
+  851  cd ckpts/priveleged
+  852  wget http://www.cs.utexas.edu/~dchen/lbc_release/ckpts/privileged/model-128.th
+  853  wget http://www.cs.utexas.edu/~dchen/lbc_release/ckpts/privileged/config.json
+  854  cd ../..
+  855  ./CarlaUE4.sh -fps=10 -benchmark
+  856  wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+  857  bash Anaconda3-2020.11-Linux-x86_64.sh
+  858  source ~/.profile
+  859  conda env create -f environment.yml
+  860  export PYTHONPATH="`pwd`/PythonAPI:$PYTHONPATH" 
+  861  conda env create -f environment.yml
+  862  conda activate carla
+  863  cudatoolkit==8.0=3
+  864  conda activate carla
+  865  conda env create -f environment.yml
+  866  python3 -m pip install -r requirements.txt
+  867  pip install -r requirements.txt
+  868  python generate_traffic.py
+  869  conda config --set changeps1 False
+  870  conda deactivate
+  871  conda config --set auto_activate_base false
+  872  conda config --set auto_activate_base true
+  873  conda activate base
+  874  conda deactivate
+  875  conda config --set auto_activate_base false
+  876  pip install erdos
+  877  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  878  rustup default nightly  # use nightly Rust toolchain
+  879  git clone https://github.com/erdos-project/erdos.git && cd erdos
+  880  python3 python/setup.py develop
+  881  rustup default nightly  # use nightly Rust toolchain
+  882  cd .
+  883  cd ./
+  884  cd ./..
+  885  rustup default nightly  # use nightly Rust toolchain
+  886  sudo snap install rustup
+  887  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  888  cargo install erdos
+  889  sudo apt  install cargo 
+  890  cargo install erdos==0.3.1
+  891  rustc --explain E0554
+  892  rustup install nightly
+  893  sudo apt install rustup
+  894  sudo snap install rustup
+  895  sudo snap install rustup--classic
+  896  sudo snap install rustup --classic
+  897  rustup install nightly
+  898  cargo +nightly install erdos
+  899  cargo nightly install erdos
+  900  cargo update
+  901  nightly install erdos
+  902  cargo check
+  903  rustup override set nightly
+  904  sudo apt-get update
+  905  cargo nightly install erdos
+  906  cargo +nightly install erdos
+  907  apt remove rustc rust-gdb libstd-rust-dev libstd-rust-1.43
+  908  rustup update
+  909  rustup run nightly cargo
+  910  rustup toolchain install nightly
+  911  rustup default nightly
+  912  cargo +nightly install erdos
+  913  cargo install erdos
+  914  rustc --explain E0554
+  915  rustup default nightly
+  916  git clone https://github.com/erdos-project/erdos.git && cd erdos
+  917  cargo build
+  918  cargo nightly build
+  919  cargo +nightly install racer
+  920  cd./..
+  921  cd ./..
+  922  rustup override add nightly
+  923  rustup default nightly
+  924  rustup override add nightly
+  925  rustup toolchain list
+  926  rustup default stable
+  927  rustup toolchain list
+  928  rustup toolchain uninstall nightly
+  929  rustup toolchain install nightly
+  930  rustup default nightly
+  931  rustup run nightly cargo build
+  932  cargo update
+  933  cargo --version
+  934  cargo.toml
+  935  python3 python/setup.py develop
+  936  git clone https://github.com/erdos-project/pylot
+  937  cd pylot
+  938  export PYLOT_HOME=`pwd`/
+  939  ./install.sh
+  940  pip install -e ./
+  941  pip install -r requirements.txt
+  942  pip install erdos==0.3.1
+  943  pip install erdos
+  944  ~/.cargo/bin
+  945  source $HOME ./cargo/env
+  946  rustup self uninstall
+  947  source $HOME/.cargo/bin
+  948  source $HOME/.cargo/env
+  949  HOME/.cargo/env
+  950  HOME/.cargo/bin
+  951  rustup default nightly
+  952  cd erdos
+  953  cargo build
+  954  python3 python/setup.py install
+  955  pip install -e ./
+  956  pip install -r requirements.txt
+  957  python setup.py
+  958  python3 setup.py
+  959  python3 python/setup.py develop
+  960  python3 setup.py develop
+  961  python3 setup.py install
+  962  pip3 install -r requirements.txt
+  963  pip install -e ./
+  964  pip3 install erdos
+  965  pip install -e ./
+  966  pip3 install erdos
+  967  pip3 install -e ./
+  968  pip3 install open3d
+  969  pip3 install -e ./
+  970  sudo dpkg -i open3d-app-0.13.0_Ubuntu-18.04.deb
+  971  conda install --name environement -c open3d-admin -c conda-forge open3d==0.13.0
+  972  pip3 install open3d==0.13.0
+  973  pip install open3d==0.13.0
+  974  sudo pip3 install open3d==0.13.0
+  975  python3 -m pip install --upgrade pip
+  976  sudo pip3 install open3d==0.13.0
+  977  pip3 install -e ./
+  978  python3 -m pip install --upgrade pip
+  979  sudo pip3 install scikit-image==0.18.3
+  980  pip3 install -U scikit-image==0.18.3
+  981  pip3 install numpy
+  982  pip3 install matplotlib
+  983  pip3 install scipy
+  984  pip3 install scikit-image==0.18.3
+  985  sudo pip3 install scikit-image==0.18.3
+  986  ip install scikit-image
+  987  pip3 install scikit-image
+  988  pip3 install scikit-image==0.18.3
+  989  pip3 install -e ./
+  990  easy_install scikit-image-0.18.3
+  991  pip3 install scikit-image==0.18.3
+  992  pip install scikit-image==0.18.3
+  993  sudo pip3 install scikit-image==0.18.3
+  994  sudo apt-get update
+  995  sudo apt upgrade
+  996  python3 -m pip install --upgrade pip
+  997  sudo pip3 install scikit-image==0.18.3
+  998  sudo -m pip3 install scikit-image==0.18.3
+  999  python3 -m pip3 install -U scikit-image==0.18.3
+ 1000  python3 -m pip install -U scikit-image==0.18.3
+ 1001  sudo apt-get install python-skimage==0.18.3
+ 1002  # Update pip
+ 1003  python -m pip install -U pip
+ 1004  # Install scikit-image
+ 1005  python -m pip install -U scikit-image
+ 1006  sudo apt-get install python-matplotlib python-numpy python-pil python-scipy
+ 1007  sudo apt-get install build-essential cython
+ 1008  sudo apt-get install python-skimage==0.18.3
+ 1009  sudo apt-get install python-skimage[0.18.3]
+ 1010  sudo apt-get install skimage==0.18.3
+ 1011  pip3 install -U scikit-image==0.18.3
+ 1012  tar -xvzf scikit-image-0.18.3
+ 1013  pip3 install -e ./
+ 1014  pip3 install -U scikit-image-0.18.3
+ 1015  sudo apt-get install skimage-0.18.3
+ 1016  sudo pip3 install -U scikit-image-0.18.3
+ 1017  sudo pip3 install scikit-image-0.18.3
+ 1018  cd scikit-image-0.18.3
+ 1019  sudo make install
+ 1020  make
+ 1021  ./configure
+ 1022  cd ./..
+ 1023  cd  $PYLOT_HOME/
+ 1024  python3 pylot.py --flagfile=configs/detection.conf
+ 1025  ./CarlaUE4.sh -opengl -quality-level={Low}
+ 1026  pip3 install absl-py
+ 1027  python3 pylot.py --flagfile=configs/detection.conf
+ 1028  pip3 install tensorflow
+ 1029  python3 pylot.py --flagfile=configs/detection.conf
+ 1030  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/cd $PYLOT_HOME/scripts/
+ 1031  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1032  cd $PYLOT_HOME/scripts/
+ 1033  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1034  cd $PYLOT_HOME/scripts/
+ 1035  source ./set_pythonpath.sh
+ 1036  export PYLOT_HOME=`pwd`/
+ 1037  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1038  cd $PYLOT_HOME/scripts/
+ 1039  source ./set_pythonpath.sh
+ 1040  cd  $PYLOT_HOME/
+ 1041  python3 pylot.py --flagfile=configs/detection.conf
+ 1042  pip3 install absl-py
+ 1043  python3 pylot.py --flagfile=configs/detection.conf
+ 1044  pip3 install shaply
+ 1045  pip3 install shapely
+ 1046  pip3 install cvxpy
+ 1047  pip3 install Cython
+ 1048  pip3 install filterpy==1.4.1
+ 1049  pip3 install opencv-python>=4.1.0.25
+ 1050  pip3 install opencv-python=4.1.0.25
+ 1051  pip3 install opencv-python==4.1.0.25
+ 1052  pip3 install imgaug==0.2.8
+ 1053  pip3 install lapsolver
+ 1054  pip3 install nonechucks==0.3.1
+ 1055  pip3 install nuscenes-devkit
+ 1056  pip3 install opencv-contrib-python==4.1.0.25
+ 1057  pip3 install progress
+ 1058  pip3 install pygame==1.9.6
+ 1059  pip3 install tensorflow-gpu==2.5.1
+ 1060  pip3 install matplotlib==3.4.3
+ 1061  git clone https://github.com/matplotlib/matplotlib.git
+ 1062  cd matplotlib
+ 1063  python -m pip install -e .
+ 1064  tar -zxvf scikit-image-0.18.3.tar.gz
+ 1065  tar -zjvf scikit-image-0.18.3.tar.bz2
+ 1066  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1067  ./scripts/run_simulator.sh
+ 1068  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/./scripts/run_simulator.sh
+ 1069  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1070  ./scripts/run_simulator.sh
+ 1071  export PYLOT_HOME=`pwd`/
+ 1072  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1073  ./scripts/run_simulator.sh
+ 1074  echo $PYLOT_HOME
+ 1075  echo $CARLA_HOME
+ 1076  ./scripts/run_simulator.sh
+ 1077  ./CarlaUE4.sh -opengl -quality-level={Low}
+ 1078  ./CarlaUE4.sh -opengl -windowed -ResX=800 -ResY=600 -carla-server -world-port=$PORT -benchmark -fps=20 -quality-level=Epic
+ 1079  export DRI_PRIME=1
+ 1080  ./CarlaUE4.sh -opengl -quality-level={Low}
+ 1081  ./CarlaUE4.sh -opengl 
+ 1082  python -m pip install -e
+ 1083  cd matplotlib
+ 1084  python -m pip install -e
+ 1085  python -m pip install
+ 1086  cd ./..
+ 1087  python3 pylot.py --flagfile=configs/detection.conf
+ 1088  cd $PYLOT_HOME
+ 1089  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1090  ./scripts/run_simulator.sh
+ 1091  export PYLOT_HOME=`pwd`/
+ 1092  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1093  ./scripts/run_simulator.sh
+ 1094  pip3 --v
+ 1095  pip3 --V
+ 1096  python3 --V
+ 1097  python3 --v
+ 1098  export PYLOT_HOME=`pwd`/
+ 1099  pip3 install -e ./
+ 1100  python3 -m pip3 install -U pip
+ 1101  python -m pip install -U pip
+ 1102  sudo add-apt-repository ppa:deadsnakes/ppa
+ 1103  sudo apt update
+ 1104  sudo apt install python3.6
+ 1105  pip3 install -e ./
+ 1106  pip3 install scikit-image==0.18.3
+ 1107  sudo pip3 install scikit-image==0.18.3
+ 1108  sudo pip3 install scikit-image==0.17.2
+ 1109  pip3 install scipy==1.7.1
+ 1110  pip3 install scipy==1.5.4
+ 1111  pip3 install shapely==1.6.4
+ 1112  tensorflow-gpu==2.5.1
+ 1113  pip3 install tensorflow-gpu==2.5.1
+ 1114  pip3 install torch==1.4.0
+ 1115  pip3 install torch==1.10.1
+ 1116  pip3 install torchvision==0.5.0
+ 1117  pip3 install cython
+ 1118  pip3 install filterpy==1.4.1
+ 1119  pip3 install imgaug==0.2.8
+ 1120  pip3 install matplotlib==3.4.3
+ 1121  pip3 install matplotlib==3.3.4
+ 1122  pip3 install nonechucks==0.3.1
+ 1123  pip3 install nuscenes-devkit
+ 1124  pip3 install progress
+ 1125  pip3 install pyquaternion
+ 1126  pip3 install scikit-learn==1.0
+ 1127  pip3 install scikit-learn==0.24.2
+ 1128  pip3 install networkx==2.2
+ 1129  export PYLOT_HOME=`pwd`/
+ 1130  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1131  cd $PYLOT_HOME/scripts/
+ 1132  source ./set_pythonpath.sh
+ 1133  cd  $PYLOT_HOME/
+ 1134  python3 pylot.py --flagfile=configs/detection.conf
+ 1135  source ~/.profile
+ 1136  conda create -n tensorflow pip python=3.6
+ 1137  activate tensorflow
+ 1138  conda activate tensorflow
+ 1139  pip3 install tensorflow-gpu==2.5.1
+ 1140  python3 pylot.py --flagfile=configs/detection.conf
+ 1141  ./CarlaUE4.sh -opengl -quality-level=Low
+ 1142  export PYLOT_HOME=`pwd`/
+ 1143  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1144  ./scripts/run_simulator.sh
+ 1145  ./CarlaUE4.sh -opengl -quality-level=Low
+ 1146  export PYLOT_HOME=`pwd`/
+ 1147  echo $PYLOT_HOME
+ 1148  export CARLA_HOME=$PYLOT_HOME/dependencies/CARLA_0.9.10.1/
+ 1149  cd $PYLOT_HOME/scripts/
+ 1150  source ./set_pythonpath.sh
+ 1151  cd  $PYLOT_HOME/
+ 1152  python3 pylot.py --flagfile=configs/detection.conf
+ 1153  python3 -V
+ 1154  pip3 uninstall -y tensorflow keras tf-nightly keras-nightly
+ 1155  pip3 install tensorflow==2.5.1
+ 1156  python3 pylot.py --flagfile=configs/detection.conf
+ 1157  python3 pylot.py --flagfile=configs/demo.conf 
+ 1158  python3 pylot.py --flagfile=configs/depth_estimation.conf
+ 1159  echo dda.py
+ 1160  cat dda.py
+ 1161  cat dda.txt
+ 1162  touch dda.py
+ 1163  chmod a+x main.py
+ 1164  ./main.py
+ 1165  torch triangle.txt
+ 1166  touch triangle.txt
+ 1167  sudo python version
+ 1168  sudo python -V
+ 1169  sudo uninstall python
+ 1170  lsb_release -a
+ 1171  lscpu
+ 1172  ls
+ 1173  sudo su
+ 1174  pwd
+ 1175  cd ~
+ 1176  ls
+ 1177  cd Downloads/
+ 1178  cd ..
+ 1179  cd Downloads/
+ 1180  ls
+ 1181  cd ..
+ 1182  cd /
+ 1183  ls
+ 1184  sandra@sandra-Lenovo-ideapad-330-15IKB:/$ 
+ 1185  nautilus
+ 1186  cd ~
+ 1187  cd /bin/
+ 1188  ls
+ 1189  ls | grep ls
+ 1190  cat ls
+ 1191  cd ..
+ 1192  cd /bin/
+ 1193  cd ..
+ 1194  cd /bin/
+ 1195  cd ls
+ 1196  cd /bin/ls
+ 1197  gedit ls
+ 1198  cat ls
+ 1199  gedit ls
+ 1200  cd ..
+ 1201  cd /etc/
+ 1202  ls
+ 1203  cd ..
+ 1204  cd /sbin/
+ 1205  cd ..
+ 1206  cd~
+ 1207  cd ~
+ 1208  fconfig
+ 1209  ifconfig
+ 1210  cd /sbin/
+ 1211  ifconfig
+ 1212  cd ifconfig
+ 1213  cd /ifconfig
+ 1214  cd /ifconfig/
+ 1215  sudo ifconfig
+ 1216  cd ~
+ 1217  sudo ifconfig
+ 1218  sudo Ifconfig
+ 1219  cd /usr/
+ 1220  ls
+ 1221  cd /usr/include
+ 1222  ls
+ 1223  ls | grep stdio
+ 1224  gedit stdio.h
+ 1225  cd ~
+ 1226  sudo apt-get install net-tools
+ 1227  ifconfig -s
+ 1228  cd /usr/lib
+ 1229  gedit ay7aga
+ 1230  ls
+ 1231  cd ~
+ 1232  cd ..
+ 1233  cd /opt
+ 1234  ls
+ 1235  cd ~
+ 1236  cd Desktop/
+ 1237  touch test.py
+ 1238  gedit test.py
+ 1239  python test.py
+ 1240  touch test.c
+ 1241  gedit test.c
+ 1242  gcc test.c -o test.exe
+ 1243  ./test
+ 1244  sudo apt-get install linux-header-$(uname -r) build-essential git
+ 1245  sudo apt-get update
+ 1246  python3 -V
+ 1247  python3
+ 1248  sudo add-apt-repository ppa:deadsnakes/ppa
+ 1249  sudo apt update
+ 1250  sudo apt install python3.10
+ 1251  python3 -V
+ 1252  touch file.h
+ 1253  gcc file.c -o file.exe
+ 1254  gcc -c file.c
+ 1255  sudo -h
+ 1256  touch file1.txt
+ 1257  touch file2.txt
+ 1258  cp file1.txt file2.txt
+ 1259  gedit file1.txt
+ 1260  cp file1.txt file2.txt
+ 1261  gedit file2.txt
+ 1262  mkdir music
+ 1263  mv file1.txt /home/iti/music
+ 1264  mv file1.txt /music
+ 1265  mv file1.txt /home/Documents
+ 1266  mv file1.txt /home/username/Documents
+ 1267  mv file1.txt /Documents
+ 1268  mv file1.txt ~/Documents
+ 1269  mv file2.txt file1.txt 
+ 1270  rmdir music
+ 1271  rm file1.txt
+ 1272  locate -i file
+ 1273  locate -i file1
+ 1274  find ~/file.c
+ 1275  find ~/test.c
+ 1276  df ~/test.c
+ 1277  df -h ~/test.c
+ 1278  df -m ~/test.c
+ 1279  df -k ~/test.c
+ 1280  df -T ~/test.c
+ 1281  df -h -k ~/test.c
+ 1282  df -h 
+ 1283  df -T 
+ 1284  touch file.c
+ 1285  touch file.cpp
+ 1286  gedit file.c
+ 1287  pip3 install python3.10
+ 1288  sudo add-apt-repository ppa:deadsnakes/ppa
+ 1289  sudo apt update
+ 1290  ls
+ 1291  apt list | grep python3.10
+ 1292  sudo apt install python3.10
+ 1293  sudo nano /usr/bin/gnome-terminal
+ 1294  sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 
+ 1295  sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10
+ 1296  sudo nano /usr/bin/gnome-terminal
+ 1297  sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10
+ 1298  sudo update-alternatives --help
+ 1299  python3 -V
+ 1300  man
+ 1301  man ls
+ 1302  man cd
+ 1303  man 1 intro
+ 1304  man 2 intro
+ 1305  man 3 intro
+ 1306  man 8 intro
+ 1307  LS
+ 1308  man LS
+ 1309  man -I LS
+ 1310  man -i LS
+ 1311  man -f ls
+ 1312  man -f pwd
+ 1313  man -f password
+ 1314  man -f passwd
+ 1315  history
+ 1316  cd /iti
+ 1317  cd ~/iti
+ 1318  history >> sandratxt
+ 1319  gedit sandratxt
+ 1320  man -k pass
+ 1321  man -k pass |grep pass
+ 1322  locate pass
+ 1323  lsusb
+ 1324  echo hello
+ 1325  man -w ls
+ 1326  cd /usr
+ 1327  /share
+ 1328  cd /share
+ 1329  cd /usr/share/man/man1
+ 1330  ls
+ 1331  cd ~/iti
+ 1332  man 3 printf
+ 1333  du ~/iti
+ 1334  man man
+ 1335  help
+ 1336  top
+ 1337  df
+ 1338  df -h
+ 1339  top
+ 1340  whoami
+ 1341  hostname
+ 1342  date
+ 1343  uptime
+ 1344  lsusb
+ 1345  lsbsi
+ 1346  lspci
+ 1347  lscpu
+ 1348  man -f -k gpu
+ 1349  man -k gpu
+ 1350  amdgpu
+ 1351  man amdgpu
+ 1352  cat /proc/cpuconfing/gpu
+ 1353  cat /proc/cpuconfing
+ 1354  lsmod
+ 1355  env
+ 1356  printenv path
+ 1357  printenv PATH
+ 1358  export x=100
+ 1359  echo $x
+ 1360  ls
+ 1361  gedit file.h&
+ 1362  vim file.h
+ 1363  uname -n
+ 1364  uname -r
+ 1365  uname -a
+ 1366  ls -l
+ 1367  nano file.h
+ 1368  cat file.h
+ 1369  cat file.h >>f2
+ 1370  cat file.h >f2
+ 1371  cat f2
+ 1372  cat file.h >f2
+ 1373  cat f2
+ 1374  cat -n file.h
+ 1375  grep v file.h
+ 1376  grep -n v file.h
+ 1377  grep -v v file.h
+ 1378  grep -c v file.h
+ 1379  cd /etc
+ 1380  cat passwd
+ 1381  cut -d: -f1 passwd 
+ 1382  sudo deluser soso
+ 1383  ls
+ 1384  sudo deluser soso
+ 1385  sudo rm -rf soso
+ 1386  cd ~/
+ 1387  sudo rm -rf soso
+ 1388  ls
+ 1389  cd /home
+ 1390  ls
+ 1391  cd ~/
+ 1392  rm -r /
+ 1393  /iti
+ 1394  cd /iti
+ 1395  cd ~/iti
+ 1396  mkdir lab3
+ 1397  cd lab3
+ 1398  mkdir f1 f2
+ 1399  touch file1
+ 1400  rm file1
+ 1401  touch file1.txt
+ 1402  tree
+ 1403  cp file.txt f1
+ 1404  cp file1.txt f1
+ 1405  cp file1.txt f2
+ 1406  cp f2 f1
+ 1407  cp -i f2 f1
+ 1408  cp -r f2 f1
+ 1409  mv f1 f2
+ 1410  cd /
+ 1411  cd ~/iti
+ 1412  cd lab3
+ 1413  mkdir f3/f4/f5
+ 1414  mkdir -p f3/f4/f5
+ 1415  tree
+ 1416  mkdir -p f6/{f1,f2,f3}
+ 1417  tree
+ 1418  rm lab3
+ 1419  rm -r lab3
+ 1420  cd ..
+ 1421  rm -r lab3
+ 1422  ls
+ 1423  rm -rv f2
+ 1424  touch lab3.txt
+ 1425  vim lab3.txt
+ 1426  head file.txt
+ 1427  head lab3.txt
+ 1428  tail lab3.txt
+ 1429  more lab3.txt
+ 1430  less lab3.txt
+ 1431  head -n 4 lab3.txt
+ 1432  vim lab3.txt
+ 1433  head -n 4 lab3.txt
+ 1434  more -n 5 lab3.txt
+ 1435  more -n lab3.txt
+ 1436  less -n 4
+ 1437  less -n 4 lab3.txt
+ 1438  tail -n 3 lab3.txt
+ 1439  tail -5 lab3.txt
+ 1440  more lab3.txt
+ 1441  man head
+ 1442  ls -li
+ 1443  tree
+ 1444  rm *
+ 1445  ls
+ 1446  touch file1.txt
+ 1447  touch file2.txt
+ 1448  vim fil1.txt
+ 1449  rm *
+ 1450  touch hussain.txt
+ 1451  touch mansour.txt
+ 1452  gedit mansour.txt 
+ 1453  gedit mansour.txt &
+ 1454  ln mansour.txt hussain.txt 
+ 1455  rm hussain.txt
+ 1456  ln mansour.txt hussain.txt 
+ 1457  ls
+ 1458  ls -li
+ 1459  gedit mansour.txt &
+ 1460  cat hussain
+ 1461  cat hussain.txt
+ 1462  gedit hussain.txt &
+ 1463  cat mansour.txt
+ 1464  rm mansour.txt
+ 1465  ls
+ 1466  cat hussain.txt
+ 1467  rm *
+ 1468  touch hussain.txt
+ 1469  rm *
+ 1470  touch mansour.txt
+ 1471  ls
+ 1472  cat mansour.txt
+ 1473  ln -s mansour.txt hussain.txt
+ 1474  ls
+ 1475  ls -li
+ 1476  gedit mansour.txt &
+ 1477  cat hussain.txt
+ 1478  rm mansour.txt
+ 1479  cat hussain.txt
+ 1480  ls
+ 1481  ls -li
+ 1482  touch mansour.txt
+ 1483  ls -li
+ 1484  cat hussain.txt
+ 1485  gedit mansour.txt &
+ 1486  cat hussain.txt
+ 1487  gedit hussain.txt &
+ 1488  cat mansour.txt
+ 1489  unlink mansour.txt hussain.txt
+ 1490  unlink hussain.txt
+ 1491  ls
+ 1492  ls -l
+ 1493  rm *
+ 1494  touch f1
+ 1495  ls-l
+ 1496  ls -l
+ 1497  chmod u+x f1
+ 1498  ls -l
+ 1499  chmod u+- f1
+ 1500  chmod g+- f1
+ 1501  chmod o+- f1
+ 1502  ls -l
+ 1503  chmod o-- f1
+ 1504  chmod u-- f1
+ 1505  ls -l
+ 1506  chmod u-rwx f1
+ 1507  chmod g-rw f1
+ 1508  chmod o-r f1
+ 1509  ls -l
+ 1510  chmod u=---,g=---,o=--- f1
+ 1511  ls -l
+ 1512  chmod uog-rwx f1
+ 1513  ls -l
+ 1514  chmod uog+rwx f1
+ 1515  ls -l
+ 1516  touch f2
+ 1517  ls -l
+ 1518  chmod uog-rwx f1
+ 1519  chmod 777 f1
+ 1520  ls -l
+ 1521  chmod 707 f1
+ 1522  ls -l
+ 1523  sudo add user Soso
+ 1524  sudo adduser Soso
+ 1525  sudo adduser soso
+ 1526  su sandra_so
+ 1527  su Sandra_So
+ 1528  \la
+ 1529  ls
+ 1530  su soso
+ 1531  sudo usermod -aG sudo soso
+ 1532  su soso
+ 1533  groups
+ 1534  su soso
+ 1535  rm -r /
+ 1536  cd ~/iti
+ 1537  rm -r / 2>errorfile.txt
+ 1538  cat errorfile.txt
+ 1539  rm -r / 1>errorfile.txt
+ 1540  cd cat /dev/null
+ 1541  cd /dev/null
+ 1542  cd ~/dev/null
+ 1543  cd /home/dev/null
+ 1544  cd /home/sandra/dev/null
+ 1545  grep -r power /sys 1> /dev/null
+ 1546  cd ~/
+ 1547  grep -r power /sys/ 1> /dev/null
+ 1548  grep -r power /sys/ 1> file1.txt
+ 1549  cat file1.txt
+ 1550  cat /dev/null
+ 1551  grep -r power /sys/ 2> file1.txt
+ 1552  grep -r power /sys/ &> /dev/null
+ 1553  cd ~/iti
+ 1554  touch y1 y2 y3 y4
+ 1555  ls -l *y
+ 1556  ls -l 
+ 1557  ls -l *2
+ 1558  rm -r *2
+ 1559  ls
+ 1560  rm -r *y*
+ 1561  ls
+ 1562  rm -r *e*
+ 1563  rm -r *f*
+ 1564  ls
+ 1565  touch f1
+ 1566  touch a b g h j k
+ 1567  rm [a-z]
+ 1568  ls
+ 1569  history
+ 1570  sudo snap install tree
+ 1571  history >>history.txt
